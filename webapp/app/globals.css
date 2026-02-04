@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette */
+  --color-primary: #0f172a;
+  --color-secondary: #14b8a6;
+  --color-accent: #f97316;
+  --color-neutral: #f1f5f9;
+  --color-text-main: #334155;
+
+  /* Fallback/System Backgrounds */
+  --background: #ffffff;
+  --foreground: var(--color-text-main);
+}
+
+@theme inline {
+  /* Colors */
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-neutral: var(--color-neutral);
+  --color-text-main: var(--color-text-main);
+
+  --color-background: var(--color-neutral);
+  --color-foreground: var(--color-text-main);
+
+  /* Fonts */
+  --font-display: var(--font-manrope);
+  --font-body: var(--font-dm-sans);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+small,
+.text-sm {
+  font-size: 14px;
+  font-weight: 400;
+}
